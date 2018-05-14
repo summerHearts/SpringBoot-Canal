@@ -1,0 +1,28 @@
+# SPRING PROFILES
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+        username: root
+        password: root
+## Mybatis 配置
+mybatis:
+    typeAliasesPackage: cn.anakin.pushclient.model
+    mapperLocations: classpath:mapper/*.xml
+
+## canal
+canal:
+  host: localhost
+  standby: test
+  port: 11111
+  destination: im_message
+  username: root
+  password: root
+
+## getui
+getui:
+  appid: ********************
+  appkey: ********************
+  appsecret: ********************
+  mastersecret: ********************
+  accessid: 11111
